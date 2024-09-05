@@ -63,7 +63,7 @@ def ver_logs():
 
 #Definir Validar Tokens
 def validar_token(token):
-    tokens_validos = ['token_servicio1', 'token_servicio2']
+    tokens_validos = ['token_servicio1', 'token_servicio2', 'token_servicio3']
     return token.split()[-1] in tokens_validos #Compruba si el token esta en la lista de token validos
 
 # Inicializar la base de datos
