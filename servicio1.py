@@ -20,6 +20,7 @@ def generar_log():
 def enviar_log():
     while True:
         log = generar_log()
+        response = requests.post(URL, json=log,headers={"Authorization" : TOKEN})
         response = requests.post(URL, json=log, headers={'Authorization' : TOKEN})
         print(f'Enviado log: {log}, Respuesta: {response.status_code}')
         time.sleep(5)
